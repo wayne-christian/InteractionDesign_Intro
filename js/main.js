@@ -5,26 +5,9 @@
 var backcolors = ['red', 'green', 'blue', 'orange', 'yellow'];
 var sections ='';
 		
-		for(i = 0; i < 89; i++){
-			//console.log(i);
-			sections += '<section data-menu-title="slide'+i+'" data-background="assets/week0assets/intro'+i+'.jpg" data-background-size="900px" data-background-color="#333333"></section>'
-		}
 
 
-$(document).ready(function () {
-	console.log('ready',sections);
-	/*$('section').each(function(){
-		if(!$(this).hasClass('code')){
-			var ran= backcolors[Math.floor((Math.random() * 4) + 1)];
-			console.log('section found', ran);
-       $(this).data('background',ran );
-		
-	}
-    });*/
-	
 
-		
-});
 
 
 
@@ -35,8 +18,8 @@ Reveal.initialize({
 	progress: true,
 	history: true,
 	center: true,
-	width: '80%',
-	height: '100%',
+	width: 1024,
+	height: 768,
 
 	transition: 'concave', // none/fade/slide/convex/concave/zoom
 	dependencies: [{
